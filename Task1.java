@@ -15,6 +15,9 @@ public class Task1 {
         }
         int n = Integer.parseInt(args[0]);
         int m = Integer.parseInt(args[1]);
+        if(n<=0 || m<=0) {
+            return;
+        }
         String path = "";
         if(n<m) {
             if(m%n == 0) {
